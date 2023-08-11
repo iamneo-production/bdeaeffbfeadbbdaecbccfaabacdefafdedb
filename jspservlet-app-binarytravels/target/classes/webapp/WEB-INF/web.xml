@@ -1,0 +1,55 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>BusServlet</servlet-name>
+  	<display-name>BusServlet</display-name>
+  	<description></description>
+  	<servlet-class>controller.BusServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>FlightServlet</servlet-name>
+  	<display-name>FlightServlet</display-name>
+  	<description></description>
+  	<servlet-class>controller.FlightServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>HotelServlet</servlet-name>
+  	<display-name>HotelServlet</display-name>
+  	<description></description>
+  	<servlet-class>controller.HotelServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>TrainServlet</servlet-name>
+  	<display-name>TrainServlet</display-name>
+  	<description></description>
+  	<servlet-class>controller.TrainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>default</servlet-name>
+  	<url-pattern>*.css</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>default</servlet-name>
+  	<url-pattern>*.svg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>BusServlet</servlet-name>
+  	<url-pattern>/bus</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FlightServlet</servlet-name>
+  	<url-pattern>/flight</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>HotelServlet</servlet-name>
+  	<url-pattern>/hotel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TrainServlet</servlet-name>
+  	<url-pattern>/train</url-pattern>
+  </servlet-mapping>
+</web-app>
